@@ -459,7 +459,7 @@
                                     [els (#%expression rhs) ...]))]
                                [[datums rhs ...]
                                 (syntax/loc clause
-                                  [(memv v '(datums)) (#%expression rhs) ...])]))
+                                  [(memv v 'datums) (#%expression rhs) ...])]))
                            (cddr (syntax->list stx)))])
          (syntax/loc stx
            (let ([v expr])
